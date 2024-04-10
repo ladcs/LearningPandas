@@ -11,7 +11,7 @@ primeira_nota = pd.DataFrame(
 segunda_nota = pd.DataFrame(
     {
         "nome": ["maria", "joão", "pedro", "ana", "Josefa"],
-        "segunda_nota": [8, 7, 9, 3, 6],
+        "segunda_nota": [8, 7, 9, 8, 6],
     }
 )
 

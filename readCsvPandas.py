@@ -10,7 +10,7 @@ def readJson(path):
 
 
 if __name__ == "__main__":
-    path = "./chuvas_morumbi.csv"
+    path = "../chuvas_morumbi.csv"
     dfCsv = readCsv(path)
 
     dfCsv.to_json("./chuvas_morumbi.json")
@@ -18,6 +18,6 @@ if __name__ == "__main__":
     path = "./chuvas_morumbi.json"
 
     dfJson = readJson(path)
-    print(dfJson)
-    # print(dfJson.loc[dfJson["intervalo"] == "2022-07-31 00:00:00 UTC"])
+    # print(dfJson)
+    print(dfJson.loc[dfJson["intervalo"] == "2022-07-31 00:00:00 UTC"])
     # print(dfJson.loc[[20]])
