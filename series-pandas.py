@@ -18,5 +18,4 @@ if __name__ == "__main__":
         "Venus": "Minako",
     }
 
-    print("\n\n\n\n")
     create_series(sailors)
