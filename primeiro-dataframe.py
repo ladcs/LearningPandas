@@ -12,12 +12,12 @@ def dataframe_notas():
         "segunda-nota": [8, 7, 9, 3],
     }
 
-    data_frame = pd.DataFrame(dict_notas)
+    df = pd.DataFrame(dict_notas)
 
-    data_frame["media"] = (data_frame["primeira-nota"] + data_frame["segunda-nota"]) / 2
-    data_frame["situação"] = data_frame["media"].apply(situacao)
+    df["media"] = (df["primeira-nota"] + df["segunda-nota"]) / 2
+    df["situação"] = df["media"].apply(situacao)
 
-    print(data_frame)
+    print(df)
 
 
 dataframe_notas()
